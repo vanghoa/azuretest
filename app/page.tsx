@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-export const dynamic = 'force-static';
-export const revalidate = 'force-cache';
+//export const dynamic = 'force-dynamic';
+//export const revalidate = 0;
 
 async function getData() {
     try {
