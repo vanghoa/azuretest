@@ -9,7 +9,7 @@ async function getData() {
         const data = await res.json();
         return data;
     } catch {
-        return { code: 'bjp roi' };
+        return { code: process.env.BJP || 'concac' };
     }
 }
 
