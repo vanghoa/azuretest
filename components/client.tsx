@@ -7,8 +7,8 @@ export default function Client() {
     useEffect(() => {
         (async function () {
             try {
-                const { body } = await (await fetch(`/api/buloz`)).json();
-                setData(body);
+                const { fuckshit } = await (await fetch(`/api/buloz`)).json();
+                setData(fuckshit);
             } catch {
                 setData('errorbip');
             }

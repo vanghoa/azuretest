@@ -13,7 +13,7 @@ export async function buloz(
 
     const name = request.query.get('name') || (await request.text()) || 'world';
 
-    return { body: `Fuck, ${name}!` };
+    return { jsonBody: { fuckshit: `Fuck, ${name}!` } };
 }
 
 app.http('buloz', {
