@@ -5,9 +5,7 @@ export const revalidate = 'force-cache';
 
 async function getData() {
     try {
-        const res = await fetch(`${process.env.FETCH_URL}/api/bip`, {
-            cache: 'no-store',
-        });
+        const res = await fetch(`${process.env.FETCH_URL}/api/bip`);
         const data = await res.json();
         return data;
     } catch {
